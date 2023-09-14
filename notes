@@ -1,0 +1,27 @@
+// api route : api.postcodes.io/postcodes?lon=""&lat=""
+
+// google api function
+// async function getPostalCode(locationName) {
+// const apiKey = process.env.APIKEY ;
+// const encodedLocationName = encodeURIComponent(locationName);
+// console.log(encodedLocationName)
+// const geocodingEndpoint = 'https://maps.googleapis.com/maps/api/geocode/json?address='+encodedLocationName+'&key='+apiKey
+// try {
+// const response = await axios.get(geocodingEndpoint)
+
+//         const results = response.data.results;
+//         if (results && results.length > 0) {
+//             const latitude = results[0].geometry.location.lat;
+//             const longitude = results[0].geometry.location.lng;
+//             const address = results[0].formatted_address
+//             return { latitude, longitude, address }
+//         }
+//         else {
+//             return 'Location not found';
+//             }
+//         } catch (error) {
+//             console.error('Error:', error);
+//             return 'Error occurred';
+//         }
+
+// }

@@ -1,0 +1,164 @@
+.section1 {
+  display: flex;
+}
+.section1 .left {
+  width: 60%;
+  position: relative;
+}
+.left img {
+  width: 100%;
+}
+.card {
+  width: 50%;
+  padding: 30px;
+  background: #fffffa;
+  position: absolute;
+  top: 60%;
+  right: 5%;
+}
+.card h1 {
+  font-weight: bold;
+}
+.card a ion-icon {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.right {
+  width: 40%;
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#result {
+  margin-left: 80px;
+}
+.section1 form {
+  position: relative;
+  width: 80%;
+  height: 325px;
+  margin: 100px auto 20px auto;
+  text-align: center;
+  background: #ecf0f1;
+  padding: 40px;
+  -webkit-border-radius: 20px 0 0 0;
+  -moz-border-radius: 20px 0 0 0;
+  border-radius: 20px 20px 20px 0;
+  -webkit-box-shadow: 0px 1px 0px #ad392d, inset 0px 1px 0px white;
+  -moz-box-shadow: 0px 1px 0px #ad392d, inset 0px 1px 0px white;
+  box-shadow: 0px 1px 0px #ad392d, inset 0px 1px 0px white;
+  box-shadow: 5px 5px 5px;
+}
+
+.section1 h4 {
+  font-size: 2em;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.section1 input {
+  display: block;
+  width: 80%;
+  padding: 14px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 0;
+  margin-bottom: 12px;
+  color: #7f8c8d;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.section1 button {
+  position: relative;
+  float: left;
+  width: 145px;
+  cursor: pointer;
+  padding: 10px 0px;
+  margin-top: 10px;
+  background: #3498db;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  text-shadow: 1px 1px 0px #2d7baf;
+  box-shadow: 0px 3px 0px #2d7baf;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.section1 button:hover {
+  background: #58b2ee;
+}
+.tracker #result {
+  display: none;
+}
+.help {
+  display: flex;
+  padding: 50px 0;
+  width: 70%;
+  justify-content: space-between;
+  text-align: center;
+  margin: auto;
+}
+.help-col {
+  width: 30%;
+  padding-right: 30px;
+}
+.stamps-section {
+}
+.stamps-header {
+  text-align: center;
+  padding-top: 20px;
+}
+.stamps {
+  display: flex;
+  padding: 40px 0;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  justify-content: space-around;
+}
+.stamps img {
+  width: 30%;
+  height: 500px;
+}
+@media (max-width: 728px) {
+  .section1 {
+    flex-direction: column;
+  }
+  .section1 .left h1 {
+    font-size: 1rem;
+  }
+  .section1 .left,
+  .section1 .right {
+    width: 100%;
+  }
+  .help {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    place-items: center;
+  }
+  .help-col {
+    width: 100%;
+  }
+  .help-col h2 {
+    font-size: 1.1rem;
+  }
+  .help-col p {
+    font-size: 0.8rem;
+  }
+  .help-col svg {
+    width: 20px;
+  }
+  .stamps {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .stamps img {
+    width: 70%;
+  }
+}

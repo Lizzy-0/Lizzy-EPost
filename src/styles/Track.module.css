@@ -1,0 +1,47 @@
+.track-card {
+  width: 40%;
+  margin: 40px auto;
+  height: 400px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.track-card form {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  justify-content: flex-start;
+  text-align: center;
+}
+.track-card form h4 {
+  position: relative;
+  top: -14%;
+  font-size: 1.5rem;
+}
+
+.track-card form input {
+  width: 40%;
+  height: 3rem;
+  margin: auto;
+  padding-left: 10px;
+}
+
+.track-card form button {
+  width: fit-content;
+  padding: 15px 10px;
+  background: black;
+  outline: none;
+  border: none;
+  color: white;
+  margin: 4px auto auto auto;
+}
+@media (max-width: 728px) {
+  .track-card {
+    width: 90%;
+  }
+}
